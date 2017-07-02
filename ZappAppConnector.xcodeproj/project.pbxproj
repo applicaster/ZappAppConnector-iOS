@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66AE73F03F2F5DDF217F7140 /* Pods_ZappAppConnectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B291F0DDD60F5E87DB25C224 /* Pods_ZappAppConnectorTests.framework */; };
+		E7849026D17AE23184966088 /* Pods_ZappAppConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16AAABC6978A076A27EE310 /* Pods_ZappAppConnector.framework */; };
 		FA95903F1F08D7E600879372 /* ZappAppConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9590351F08D7E600879372 /* ZappAppConnector.framework */; };
 		FA9590441F08D7E600879372 /* ZappAppConnectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9590431F08D7E600879372 /* ZappAppConnectorTests.m */; };
 		FA9590461F08D7E600879372 /* ZappAppConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9590381F08D7E600879372 /* ZappAppConnector.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,6 +30,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0824DA4ED3E6BE8B6C57EDDA /* Pods-ZappAppConnector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappAppConnector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZappAppConnector/Pods-ZappAppConnector.debug.xcconfig"; sourceTree = "<group>"; };
+		365E8C5F3B06CC6F3F5965D4 /* Pods-ZappAppConnectorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappAppConnectorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZappAppConnectorTests/Pods-ZappAppConnectorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		90D7D48DF8594EFF11EAA009 /* Pods-ZappAppConnectorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappAppConnectorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZappAppConnectorTests/Pods-ZappAppConnectorTests.release.xcconfig"; sourceTree = "<group>"; };
+		B291F0DDD60F5E87DB25C224 /* Pods_ZappAppConnectorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZappAppConnectorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E16AAABC6978A076A27EE310 /* Pods_ZappAppConnector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZappAppConnector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7EDBC18C1683DC6E51A7D1B /* Pods-ZappAppConnector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappAppConnector.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZappAppConnector/Pods-ZappAppConnector.release.xcconfig"; sourceTree = "<group>"; };
 		FA9590351F08D7E600879372 /* ZappAppConnector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZappAppConnector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9590381F08D7E600879372 /* ZappAppConnector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZappAppConnector.h; sourceTree = "<group>"; };
 		FA9590391F08D7E600879372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7849026D17AE23184966088 /* Pods_ZappAppConnector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +63,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA95903F1F08D7E600879372 /* ZappAppConnector.framework in Frameworks */,
+				66AE73F03F2F5DDF217F7140 /* Pods_ZappAppConnectorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62B68DE0E47FE99D8A3EC03D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E16AAABC6978A076A27EE310 /* Pods_ZappAppConnector.framework */,
+				B291F0DDD60F5E87DB25C224 /* Pods_ZappAppConnectorTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8466ED8AC4BC88AF5F9C6F6F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0824DA4ED3E6BE8B6C57EDDA /* Pods-ZappAppConnector.debug.xcconfig */,
+				F7EDBC18C1683DC6E51A7D1B /* Pods-ZappAppConnector.release.xcconfig */,
+				365E8C5F3B06CC6F3F5965D4 /* Pods-ZappAppConnectorTests.debug.xcconfig */,
+				90D7D48DF8594EFF11EAA009 /* Pods-ZappAppConnectorTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FA95902B1F08D7E500879372 = {
 			isa = PBXGroup;
 			children = (
 				FA9590371F08D7E600879372 /* ZappAppConnector */,
 				FA9590421F08D7E600879372 /* ZappAppConnectorTests */,
 				FA9590361F08D7E600879372 /* Products */,
+				8466ED8AC4BC88AF5F9C6F6F /* Pods */,
+				62B68DE0E47FE99D8A3EC03D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,10 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA9590491F08D7E600879372 /* Build configuration list for PBXNativeTarget "ZappAppConnector" */;
 			buildPhases = (
+				AD850484A6824E4857A777B3 /* [CP] Check Pods Manifest.lock */,
 				FA9590301F08D7E600879372 /* Sources */,
 				FA9590311F08D7E600879372 /* Frameworks */,
 				FA9590321F08D7E600879372 /* Headers */,
 				FA9590331F08D7E600879372 /* Resources */,
+				C5B701FF998CA5C4680AE24C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -157,9 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA95904C1F08D7E600879372 /* Build configuration list for PBXNativeTarget "ZappAppConnectorTests" */;
 			buildPhases = (
+				1F97B5756838A71BB56352B1 /* [CP] Check Pods Manifest.lock */,
 				FA95903A1F08D7E600879372 /* Sources */,
 				FA95903B1F08D7E600879372 /* Frameworks */,
 				FA95903C1F08D7E600879372 /* Resources */,
+				69FB9268447CD59217562D66 /* [CP] Embed Pods Frameworks */,
+				50D9A025FDF0A569353F521D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,6 +261,84 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F97B5756838A71BB56352B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		50D9A025FDF0A569353F521D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZappAppConnectorTests/Pods-ZappAppConnectorTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69FB9268447CD59217562D66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZappAppConnectorTests/Pods-ZappAppConnectorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD850484A6824E4857A777B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C5B701FF998CA5C4680AE24C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZappAppConnector/Pods-ZappAppConnector-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA9590301F08D7E600879372 /* Sources */ = {
@@ -353,6 +468,7 @@
 		};
 		FA95904A1F08D7E600879372 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0824DA4ED3E6BE8B6C57EDDA /* Pods-ZappAppConnector.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -370,6 +486,7 @@
 		};
 		FA95904B1F08D7E600879372 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7EDBC18C1683DC6E51A7D1B /* Pods-ZappAppConnector.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -387,6 +504,7 @@
 		};
 		FA95904D1F08D7E600879372 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 365E8C5F3B06CC6F3F5965D4 /* Pods-ZappAppConnectorTests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ZappAppConnectorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -397,6 +515,7 @@
 		};
 		FA95904E1F08D7E600879372 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90D7D48DF8594EFF11EAA009 /* Pods-ZappAppConnectorTests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ZappAppConnectorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -424,6 +543,7 @@
 				FA95904B1F08D7E600879372 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA95904C1F08D7E600879372 /* Build configuration list for PBXNativeTarget "ZappAppConnectorTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +552,7 @@
 				FA95904E1F08D7E600879372 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
