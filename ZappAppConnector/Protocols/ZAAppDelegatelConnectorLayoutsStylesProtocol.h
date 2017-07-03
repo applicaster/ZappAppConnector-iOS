@@ -11,5 +11,6 @@
 - (NSBundle *)stylesBundle;
 - (NSBundle *)zappLayoutsStylesBundle;
 - (NSDictionary *)zappLayoutsStylesMappingDict;
+- (BOOL)isZappLayoutsEnabled;
 
 @end

@@ -12,7 +12,6 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
-  s.default_subspec = 'Basic'
   s.xcconfig =  {
                 'SWIFT_VERSION' => '3.0'
               }
