@@ -13,6 +13,7 @@
 #import "ZAAppDelegateConnectorTimeProtocol.h"
 #import "ZAAppDelegateConnectorActionProtocol.h"
 #import "ZAAppDelegateConnectorAnimationProtocol.h"
+#import "ZAAppDelegateConnectorURLProtocol.h"
 
 
 @interface ZAAppConnector : NSObject
@@ -23,6 +24,8 @@
 @property (nonatomic, weak) id<ZAAppDelegateConnectorTimeProtocol> timeDelegate;
 @property (nonatomic, weak) id<ZAAppDelegateConnectorActionProtocol> actionDelegate;
 @property (nonatomic, weak) id<ZAAppDelegateConnectorAnimationProtocol> animationDelegate;
+@property (nonatomic, weak) id<ZAAppDelegateConnectorURLProtocol> urlDelegate;
+
 
 + (instancetype)sharedInstance;
 

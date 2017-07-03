@@ -12,5 +12,6 @@
 - (NSBundle *)zappLayoutsStylesBundle;
 - (NSDictionary *)zappLayoutsStylesMappingDict;
 - (BOOL)isZappLayoutsEnabled;
+- (Class)zappLayoutViewController;
 
 @end
