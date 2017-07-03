@@ -19,7 +19,7 @@ static ZAAppConnector *_sharedInstance;
 
 #pragma mark - Singletone
 
-+ (id)sharedInstance {
++ (instancetype)sharedInstance {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _sharedInstance = [[ZAAppConnector alloc] init];

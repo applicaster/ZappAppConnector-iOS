@@ -24,6 +24,6 @@
 @property (nonatomic, weak) id<ZAAppDelegateConnectorActionProtocol> actionDelegate;
 @property (nonatomic, weak) id<ZAAppDelegateConnectorAnimationProtocol> animationDelegate;
 
-+ (id)sharedInstance;
++ (instancetype)sharedInstance;
 
 @end
