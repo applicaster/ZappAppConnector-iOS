@@ -6,7 +6,7 @@
 //  Copyright © 2017 Applicaster Ltd. All rights reserved.
 //
 
-@protocol ZAAppDelegatelConnectorLayoutsStylesProtocol
+@protocol ZAAppDelegateConnectorLayoutsStylesProtocol
 
 - (NSBundle *)stylesBundle;
 - (NSBundle *)zappLayoutsStylesBundle;

@@ -8,15 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		66AE73F03F2F5DDF217F7140 /* Pods_ZappAppConnectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B291F0DDD60F5E87DB25C224 /* Pods_ZappAppConnectorTests.framework */; };
+		CE50034C1F0A0F3F00825C38 /* ZAAppDelegateConnectorTimeProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CE50034B1F0A0F3F00825C38 /* ZAAppDelegateConnectorTimeProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE50034E1F0A10ED00825C38 /* ZAAppDelegateConnectorActionProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CE50034D1F0A10ED00825C38 /* ZAAppDelegateConnectorActionProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE5003501F0A115E00825C38 /* ZAAppDelegateConnectorAnimationProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CE50034F1F0A115E00825C38 /* ZAAppDelegateConnectorAnimationProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E7849026D17AE23184966088 /* Pods_ZappAppConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16AAABC6978A076A27EE310 /* Pods_ZappAppConnector.framework */; };
 		FA95903F1F08D7E600879372 /* ZappAppConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9590351F08D7E600879372 /* ZappAppConnector.framework */; };
 		FA9590441F08D7E600879372 /* ZappAppConnectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9590431F08D7E600879372 /* ZappAppConnectorTests.m */; };
 		FA9590461F08D7E600879372 /* ZappAppConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9590381F08D7E600879372 /* ZappAppConnector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA9590521F08D80500879372 /* ZAAppConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9590501F08D80500879372 /* ZAAppConnector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA9590531F08D80500879372 /* ZAAppConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9590511F08D80500879372 /* ZAAppConnector.m */; };
-		FA9590571F08D81F00879372 /* ZAAppDelegatelConnectorNavigationProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9590551F08D81F00879372 /* ZAAppDelegatelConnectorNavigationProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA95905A1F08DA6A00879372 /* ZAAppDelegatelConnectorLocalizationProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9590591F08DA6A00879372 /* ZAAppDelegatelConnectorLocalizationProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA95905C1F08DA7F00879372 /* ZAAppDelegatelConnectorLayoutsStylesProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = FA95905B1F08DA7F00879372 /* ZAAppDelegatelConnectorLayoutsStylesProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA9590571F08D81F00879372 /* ZAAppDelegateConnectorNavigationProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9590551F08D81F00879372 /* ZAAppDelegateConnectorNavigationProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA95905A1F08DA6A00879372 /* ZAAppDelegateConnectorLocalizationProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9590591F08DA6A00879372 /* ZAAppDelegateConnectorLocalizationProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA95905C1F08DA7F00879372 /* ZAAppDelegateConnectorLayoutsStylesProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = FA95905B1F08DA7F00879372 /* ZAAppDelegateConnectorLayoutsStylesProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,9 @@
 		365E8C5F3B06CC6F3F5965D4 /* Pods-ZappAppConnectorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappAppConnectorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZappAppConnectorTests/Pods-ZappAppConnectorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		90D7D48DF8594EFF11EAA009 /* Pods-ZappAppConnectorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappAppConnectorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZappAppConnectorTests/Pods-ZappAppConnectorTests.release.xcconfig"; sourceTree = "<group>"; };
 		B291F0DDD60F5E87DB25C224 /* Pods_ZappAppConnectorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZappAppConnectorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE50034B1F0A0F3F00825C38 /* ZAAppDelegateConnectorTimeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAAppDelegateConnectorTimeProtocol.h; sourceTree = "<group>"; };
+		CE50034D1F0A10ED00825C38 /* ZAAppDelegateConnectorActionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAAppDelegateConnectorActionProtocol.h; sourceTree = "<group>"; };
+		CE50034F1F0A115E00825C38 /* ZAAppDelegateConnectorAnimationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAAppDelegateConnectorAnimationProtocol.h; sourceTree = "<group>"; };
 		E16AAABC6978A076A27EE310 /* Pods_ZappAppConnector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZappAppConnector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7EDBC18C1683DC6E51A7D1B /* Pods-ZappAppConnector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappAppConnector.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZappAppConnector/Pods-ZappAppConnector.release.xcconfig"; sourceTree = "<group>"; };
 		FA9590351F08D7E600879372 /* ZappAppConnector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZappAppConnector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,9 +50,9 @@
 		FA9590451F08D7E600879372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA9590501F08D80500879372 /* ZAAppConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAAppConnector.h; sourceTree = "<group>"; };
 		FA9590511F08D80500879372 /* ZAAppConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZAAppConnector.m; sourceTree = "<group>"; };
-		FA9590551F08D81F00879372 /* ZAAppDelegatelConnectorNavigationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAAppDelegatelConnectorNavigationProtocol.h; sourceTree = "<group>"; };
-		FA9590591F08DA6A00879372 /* ZAAppDelegatelConnectorLocalizationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAAppDelegatelConnectorLocalizationProtocol.h; sourceTree = "<group>"; };
-		FA95905B1F08DA7F00879372 /* ZAAppDelegatelConnectorLayoutsStylesProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAAppDelegatelConnectorLayoutsStylesProtocol.h; sourceTree = "<group>"; };
+		FA9590551F08D81F00879372 /* ZAAppDelegateConnectorNavigationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAAppDelegateConnectorNavigationProtocol.h; sourceTree = "<group>"; };
+		FA9590591F08DA6A00879372 /* ZAAppDelegateConnectorLocalizationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAAppDelegateConnectorLocalizationProtocol.h; sourceTree = "<group>"; };
+		FA95905B1F08DA7F00879372 /* ZAAppDelegateConnectorLayoutsStylesProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAAppDelegateConnectorLayoutsStylesProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,9 +148,12 @@
 		FA9590541F08D81F00879372 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				FA9590591F08DA6A00879372 /* ZAAppDelegatelConnectorLocalizationProtocol.h */,
-				FA9590551F08D81F00879372 /* ZAAppDelegatelConnectorNavigationProtocol.h */,
-				FA95905B1F08DA7F00879372 /* ZAAppDelegatelConnectorLayoutsStylesProtocol.h */,
+				FA9590591F08DA6A00879372 /* ZAAppDelegateConnectorLocalizationProtocol.h */,
+				FA9590551F08D81F00879372 /* ZAAppDelegateConnectorNavigationProtocol.h */,
+				FA95905B1F08DA7F00879372 /* ZAAppDelegateConnectorLayoutsStylesProtocol.h */,
+				CE50034B1F0A0F3F00825C38 /* ZAAppDelegateConnectorTimeProtocol.h */,
+				CE50034D1F0A10ED00825C38 /* ZAAppDelegateConnectorActionProtocol.h */,
+				CE50034F1F0A115E00825C38 /* ZAAppDelegateConnectorAnimationProtocol.h */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -156,10 +165,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA95905A1F08DA6A00879372 /* ZAAppDelegatelConnectorLocalizationProtocol.h in Headers */,
-				FA9590571F08D81F00879372 /* ZAAppDelegatelConnectorNavigationProtocol.h in Headers */,
+				FA95905A1F08DA6A00879372 /* ZAAppDelegateConnectorLocalizationProtocol.h in Headers */,
+				FA9590571F08D81F00879372 /* ZAAppDelegateConnectorNavigationProtocol.h in Headers */,
 				FA9590461F08D7E600879372 /* ZappAppConnector.h in Headers */,
-				FA95905C1F08DA7F00879372 /* ZAAppDelegatelConnectorLayoutsStylesProtocol.h in Headers */,
+				CE5003501F0A115E00825C38 /* ZAAppDelegateConnectorAnimationProtocol.h in Headers */,
+				CE50034C1F0A0F3F00825C38 /* ZAAppDelegateConnectorTimeProtocol.h in Headers */,
+				CE50034E1F0A10ED00825C38 /* ZAAppDelegateConnectorActionProtocol.h in Headers */,
+				FA95905C1F08DA7F00879372 /* ZAAppDelegateConnectorLayoutsStylesProtocol.h in Headers */,
 				FA9590521F08D80500879372 /* ZAAppConnector.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

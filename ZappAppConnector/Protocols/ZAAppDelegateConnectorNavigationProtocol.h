@@ -6,7 +6,7 @@
 //  Copyright © 2017 Applicaster Ltd. All rights reserved.
 //
 
-@protocol ZAAppDelegatelConnectorNavigationProtocol
+@protocol ZAAppDelegateConnectorNavigationProtocol
 
 - (void)navigateToHomeScreen;
 - (void)customizeNavigationWithScreenEntity:(NSObject*)sirenEntity;

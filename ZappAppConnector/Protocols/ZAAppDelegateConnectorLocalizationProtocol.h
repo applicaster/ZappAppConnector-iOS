@@ -6,7 +6,7 @@
 //  Copyright © 2017 Applicaster Ltd. All rights reserved.
 //
 
-@protocol ZAAppDelegatelConnectorLocalizationProtocol
+@protocol ZAAppDelegateConnectorLocalizationProtocol
 
 - (NSString *)localizationStringByKey:(NSString *)localizationKey defaultString:(NSString *)defaultString;
 - (void)changeAppLocalization:(NSString *)localization;
