@@ -9,5 +9,6 @@
 @protocol ZAAppDelegatelConnectorLocalizationProtocol
 
 - (NSString *)localizationStringByKey:(NSString *)localizationKey defaultString:(NSString *)defaultString;
+- (void)changeAppLocalization:(NSString *)localization;
 
 @end
