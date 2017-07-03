@@ -9,4 +9,5 @@
 @protocol ZAAppDelegateConnectorAnimationProtocol
 
 - (NSObject *)defaultAnimation;
+
 @end
