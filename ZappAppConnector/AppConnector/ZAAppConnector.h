@@ -14,7 +14,7 @@
 #import "ZAAppDelegateConnectorActionProtocol.h"
 #import "ZAAppDelegateConnectorAnimationProtocol.h"
 #import "ZAAppDelegateConnectorURLProtocol.h"
-
+#import "ZAAppDelegateConnectorRemoteConfigurationProtocol.h"
 
 @interface ZAAppConnector : NSObject
 
@@ -25,6 +25,7 @@
 @property (nonatomic, weak) id<ZAAppDelegateConnectorActionProtocol> actionDelegate;
 @property (nonatomic, weak) id<ZAAppDelegateConnectorAnimationProtocol> animationDelegate;
 @property (nonatomic, weak) id<ZAAppDelegateConnectorURLProtocol> urlDelegate;
+@property (nonatomic, weak) id<ZAAppDelegateConnectorRemoteConfigurationProtocol> remoteConfigurationDelegate;
 
 
 + (instancetype)sharedInstance;
