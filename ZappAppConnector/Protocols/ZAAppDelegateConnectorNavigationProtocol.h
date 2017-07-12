@@ -9,6 +9,6 @@
 @protocol ZAAppDelegateConnectorNavigationProtocol
 
 - (void)navigateToHomeScreen;
-- (void)customizeNavigationWithScreenEntity:(NSObject*)sirenEntity;
+- (void)customizeNavigationWithScreenEntity:(NSObject *)sirenEntity;
 
 @end
