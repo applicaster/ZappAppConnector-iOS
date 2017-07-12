@@ -8,7 +8,7 @@
 
 #import <Foundation/NSObject.h>
 
-@protocol ZAAppDelegateConnectorRemoteConfigurationProtocol
+@protocol ZAAppDelegateConnectorFirebaseRemoteConfigurationProtocol
 
 - (NSString*) firebaseRemoteConfigurationStringForKey:(NSString*)key;
 - (NSNumber*) firebaseRemoteConfigurationNumberForKey:(NSString*)key;
