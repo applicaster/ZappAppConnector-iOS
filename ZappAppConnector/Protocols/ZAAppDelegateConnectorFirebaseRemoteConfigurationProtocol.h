@@ -10,8 +10,8 @@
 
 @protocol ZAAppDelegateConnectorFirebaseRemoteConfigurationProtocol
 
-- (NSString*) firebaseRemoteConfigurationStringForKey:(NSString*)key;
-- (NSNumber*) firebaseRemoteConfigurationNumberForKey:(NSString*)key;
-- (BOOL) firebaseRemoteConfigurationBoolForKey:(NSString*)key;
-- (NSSet<NSString*>*) firebaseRemoteConfigurationKeysWithPrefix:(NSString*)key;
+- (NSString *) stringForKey:(NSString *)key;
+- (NSNumber *) numberForKey:(NSString *)key;
+- (BOOL) boolForKey:(NSString *)key;
+- (NSSet<NSString *> *) keysWithPrefix:(NSString *)prefix;
 @end
