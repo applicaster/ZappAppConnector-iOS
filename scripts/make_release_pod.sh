@@ -118,8 +118,8 @@ pushd "${product_dir}"
 ls ${product_dir}
 
 pod repo add master https://github.com/CocoaPods/Specs.git
-pod repo add ApplicasterSpecs git@github.com:applicaster/CocoaPods.git
-pod repo push --verbose --no-private --allow-warnings ApplicasterSpecs "${podspec_file_name}"
+pod repo add ApplicasterPluginSpecs git@github.com:applicaster/PluginsBuilderCocoaPods.git
+pod repo push --verbose --no-private --allow-warnings ApplicasterPluginSpecs "${podspec_file_name}"
 popd
 
 # Removed Build directory
