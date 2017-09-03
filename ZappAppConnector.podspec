@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ZappAppConnector"
-  s.version          = '1.0.2'
+  s.version          = '1.1.1'
   s.summary          = "ZappAppConnector"
   s.description      = <<-DESC
                         ZappAppConnector container.
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author           = { "cmps" => "y.bochman@applicaster.com" }
   s.source           = { :git => "git@github.com:applicaster/ZappAppConnector-iOS.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '8.0'
+  s.platform     = :ios, '9.0'
   s.requires_arc = true
   s.xcconfig =  {
                 'SWIFT_VERSION' => '3.0'
