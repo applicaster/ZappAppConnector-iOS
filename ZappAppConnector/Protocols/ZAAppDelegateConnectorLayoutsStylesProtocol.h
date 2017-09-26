@@ -22,4 +22,14 @@
  @return Expected default status bar style for application
  */
 - (UIStatusBarStyle)defaultStatusBarStyle;
+
+
+@optional
+/**
+ Retrieve style parameters by style name
+ 
+ @return dictionary of color, font
+ */
+- (NSDictionary*) styleParamsByStyleName:(NSString*)styleName;
+
 @end
