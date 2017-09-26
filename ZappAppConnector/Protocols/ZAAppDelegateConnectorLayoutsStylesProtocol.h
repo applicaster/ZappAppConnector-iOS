@@ -23,6 +23,8 @@
  */
 - (UIStatusBarStyle)defaultStatusBarStyle;
 
+
+@optional
 /**
  Retrieve style parameters by style name
  
