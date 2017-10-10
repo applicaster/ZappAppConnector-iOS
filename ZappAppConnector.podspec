@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.xcconfig =  {
-                'SWIFT_VERSION' => '3.0'
+                'SWIFT_VERSION' => '3.2'
               }
 end
