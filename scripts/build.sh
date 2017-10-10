@@ -1,6 +1,6 @@
 #!/bin/sh
 
-product_name=ApplicasterSDK
+product_name=ZappAppConnector
 
 OUTPUT_DIR=$(mktemp -d -t ${product_name}-temp)
 BUILD_OUTPUT_DIR="$OUTPUT_DIR"/build
