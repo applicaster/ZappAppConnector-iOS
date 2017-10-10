@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ZappAppConnector"
-  s.version          = '1.1.2'
+  s.version          = '1.2.0'
   s.summary          = "ZappAppConnector"
   s.description      = <<-DESC
                         ZappAppConnector container.
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '9.0'
   s.requires_arc = true
   s.xcconfig =  {
-                'SWIFT_VERSION' => '3.0'
+                'SWIFT_VERSION' => '3.2'
               }
   s.public_header_files = 'ZappAppConnector/**/*.h'
   s.source_files = ['ZappAppConnector/**/*.{h,m}']
