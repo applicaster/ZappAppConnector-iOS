@@ -32,4 +32,9 @@
  */
 - (NSDictionary*) styleParamsByStyleName:(NSString*)styleName;
 
+/**
+ Returns the UIInterfaceOrientationMask for the initial orientation as defined in the GAFeatureCustomization
+ */
+- (UIInterfaceOrientationMask)initialOrientation;
+
 @end
