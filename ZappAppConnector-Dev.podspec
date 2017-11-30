@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '9.0'
   s.requires_arc = true
   s.xcconfig =  {
-                'SWIFT_VERSION' => '3.2'
+                'SWIFT_VERSION' => '4.0'
               }
   s.public_header_files = 'ZappAppConnector/**/*.h'
   s.source_files = ['ZappAppConnector/**/*.{h,m}']
