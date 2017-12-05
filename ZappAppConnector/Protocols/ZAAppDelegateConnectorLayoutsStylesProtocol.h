@@ -8,6 +8,11 @@
 
 @import UIKit;
 
+static NSString *const kZappLayoutStylesFontKey = @"kZappLayoutStylesFontKey";
+static NSString *const kZappLayoutStylesBackgroundColorKey = @"kZappLayoutStylesBackgroundColorKey";
+static NSString *const kZappLayoutStylesBackgroundImageKey = @"kZappLayoutStylesBackgroundImageKey";
+static NSString *const kZappLayoutStylesLocalizationKey = @"kZappLayoutStylesLocalizationKey";
+
 @protocol ZAAppDelegateConnectorLayoutsStylesProtocol
 
 - (NSBundle *)stylesBundle;
@@ -18,7 +23,7 @@
 
 /**
  Retrieve status bar from features customization plist
-
+ 
  @return Expected default status bar style for application
  */
 - (UIStatusBarStyle)defaultStatusBarStyle;
@@ -32,9 +37,15 @@
  */
 - (NSDictionary*) styleParamsByStyleName:(NSString*)styleName;
 
+- (void)setViewStyle:(UIView *)view withKeys:(NSDictionary *)keys;
+- (void)setLabelStyle:(UILabel *)label withKeys:(NSDictionary *)keys;
+- (void)setButtonStyle:(UIButton *)button withKeys:(NSDictionary *)keys;
+
 /**
  Returns the UIInterfaceOrientationMask for the initial orientation as defined in the GAFeatureCustomization
  */
 - (UIInterfaceOrientationMask)initialOrientation;
 
+
 @end
+
