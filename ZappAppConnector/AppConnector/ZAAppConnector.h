@@ -15,6 +15,8 @@
 #import "ZAAppDelegateConnectorAnimationProtocol.h"
 #import "ZAAppDelegateConnectorURLProtocol.h"
 #import "ZAAppDelegateConnectorFirebaseRemoteConfigurationProtocol.h"
+#import "ZAAppDelegateConnectorFirebaseRemoteConfigurationProtocol.h"
+#import "ZAAppDelegateConnectorChromecastProtocol.h"
 
 @interface ZAAppConnector : NSObject
 
@@ -26,7 +28,7 @@
 @property (nonatomic, weak) id<ZAAppDelegateConnectorAnimationProtocol> animationDelegate;
 @property (nonatomic, weak) id<ZAAppDelegateConnectorURLProtocol> urlDelegate;
 @property (nonatomic, weak) id<ZAAppDelegateConnectorFirebaseRemoteConfigurationProtocol> firebaseRemoteConfigurationDelegate;
-
+@property (nonatomic, weak) id<ZAAppDelegateConnectorChromecastProtocol> chromecastDelegate;
 
 + (instancetype)sharedInstance;
 

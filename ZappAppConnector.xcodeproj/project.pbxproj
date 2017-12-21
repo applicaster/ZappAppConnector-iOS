@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07E094671FEC161F006C1776 /* ZAAppDelegateConnectorChromecastProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E094661FEC161F006C1776 /* ZAAppDelegateConnectorChromecastProtocol.h */; };
 		66AE73F03F2F5DDF217F7140 /* Pods_ZappAppConnectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B291F0DDD60F5E87DB25C224 /* Pods_ZappAppConnectorTests.framework */; };
 		CE4A9A991F0AD60A002FDE36 /* ZAAppDelegateConnectorURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4A9A981F0AD60A002FDE36 /* ZAAppDelegateConnectorURLProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE50034C1F0A0F3F00825C38 /* ZAAppDelegateConnectorTimeProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CE50034B1F0A0F3F00825C38 /* ZAAppDelegateConnectorTimeProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07E094661FEC161F006C1776 /* ZAAppDelegateConnectorChromecastProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZAAppDelegateConnectorChromecastProtocol.h; sourceTree = "<group>"; };
 		0824DA4ED3E6BE8B6C57EDDA /* Pods-ZappAppConnector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappAppConnector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZappAppConnector/Pods-ZappAppConnector.debug.xcconfig"; sourceTree = "<group>"; };
 		365E8C5F3B06CC6F3F5965D4 /* Pods-ZappAppConnectorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappAppConnectorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZappAppConnectorTests/Pods-ZappAppConnectorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		90D7D48DF8594EFF11EAA009 /* Pods-ZappAppConnectorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappAppConnectorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZappAppConnectorTests/Pods-ZappAppConnectorTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				CE50034D1F0A10ED00825C38 /* ZAAppDelegateConnectorActionProtocol.h */,
 				CE50034F1F0A115E00825C38 /* ZAAppDelegateConnectorAnimationProtocol.h */,
 				CE4A9A981F0AD60A002FDE36 /* ZAAppDelegateConnectorURLProtocol.h */,
+				07E094661FEC161F006C1776 /* ZAAppDelegateConnectorChromecastProtocol.h */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				FA9A96511F1612F500E64F9D /* ZAAppDelegateConnectorFirebaseRemoteConfigurationProtocol.h in Headers */,
 				FA95905A1F08DA6A00879372 /* ZAAppDelegateConnectorLocalizationProtocol.h in Headers */,
 				CE4A9A991F0AD60A002FDE36 /* ZAAppDelegateConnectorURLProtocol.h in Headers */,
+				07E094671FEC161F006C1776 /* ZAAppDelegateConnectorChromecastProtocol.h in Headers */,
 				FA9590571F08D81F00879372 /* ZAAppDelegateConnectorNavigationProtocol.h in Headers */,
 				FA9590461F08D7E600879372 /* ZappAppConnector.h in Headers */,
 				CE5003501F0A115E00825C38 /* ZAAppDelegateConnectorAnimationProtocol.h in Headers */,
