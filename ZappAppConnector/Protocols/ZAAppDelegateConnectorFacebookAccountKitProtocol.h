@@ -8,6 +8,8 @@
 
 #import <Foundation/NSObject.h>
 
+@class ZAAccountKitUser;
+
 typedef NS_ENUM(NSUInteger, ZAAccountKitLoginType) {
     ZAAccountKitLoginTypeEmail,
     ZAAccountKitLoginTypePhone
@@ -17,14 +19,6 @@ typedef NS_ENUM(NSUInteger, ZAAccountKitStatus) {
     ZAAccountKitStatusFailed,
     ZAAccountKitStatusCompleted
 };
-
-
-@interface ZAAccountKitUser : NSObject
-
-@property (nonatomic, strong) NSString *email;
-@property (nonatomic, strong) NSString *phone;
-
-@end
 
 typedef void(^AccountKitLoginCompletionBlock)(ZAAccountKitStatus, ZAAccountKitUser *);
 
