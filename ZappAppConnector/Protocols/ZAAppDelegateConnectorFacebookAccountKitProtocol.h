@@ -16,6 +16,7 @@ typedef NS_ENUM(NSUInteger, ZAAccountKitLoginType) {
 };
 
 typedef NS_ENUM(NSUInteger, ZAAccountKitStatus) {
+    ZAAccountKitStatusCanceled,
     ZAAccountKitStatusFailed,
     ZAAccountKitStatusCompleted
 };
