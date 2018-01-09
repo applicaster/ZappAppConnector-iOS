@@ -7,7 +7,10 @@
 //
 @protocol ZAAppDelegateConnectorChromecastProtocol
 
-
+- (BOOL)isSynced;
+- (void)play:(NSArray *)playableItems;
+- (void)showExtededPlayer;
+- (UIViewController *)getExtededPlayerViewController;
 
 @end
 
