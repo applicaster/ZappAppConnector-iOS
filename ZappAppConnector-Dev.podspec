@@ -12,10 +12,13 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, '9.0'
   s.requires_arc = true
-  s.xcconfig =  {
-                'SWIFT_VERSION' => '4.0'
-              }
+  
+  s.xcconfig = {
+    'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
+    'SWIFT_VERSION' => '4.0'
+  }
+
   s.public_header_files = 'ZappAppConnector/**/*.h'
-  s.source_files = ['ZappAppConnector/**/*.{h,m}']
+  s.source_files = ['ZappAppConnector/**/*.{h,m,swift}']
 	s.exclude_files = ['ZappAppConnector/**/*Tests.m', 'ZappAppConnector/Info.plist']
 end
