@@ -1,22 +1,22 @@
 # ZappAppConnector-iOS
-ZappAppConnector-iOS
 
-Zapp-iOS appDelegate implements the following protocols to allow classes from plugins or other frameworks that are being added to the app as external pods to get access to the appp level classes and functionalities.
 
-*ZAAppDelegateConnectorLocalizationProtocol*
+### Zapp-iOS appDelegate implements the following protocols to allow classes from plugins or other frameworks that are being added to the app as external pods to get access to the appp level classes and functionalities.
 
-*ZAAppDelegateConnectorNavigationProtocol*
+>*ZAAppDelegateConnectorLocalizationProtocol*
 
-*ZAAppDelegateConnectorLayoutsStylesProtocol*
+>*ZAAppDelegateConnectorNavigationProtocol*
 
-*ZAAppDelegateConnectorTimeProtocol*
+>*ZAAppDelegateConnectorLayoutsStylesProtocol*
 
-*ZAAppDelegateConnectorActionProtocol*
+>*ZAAppDelegateConnectorTimeProtocol*
 
-*ZAAppDelegateConnectorAnimationProtocol*
+>*ZAAppDelegateConnectorActionProtocol*
 
-*ZAAppDelegateConnectorURLProtocol*
+>*ZAAppDelegateConnectorAnimationProtocol*
 
-*ZAAppDelegateConnectorFirebaseRemoteConfigurationProtocol*
+>*ZAAppDelegateConnectorURLProtocol*
 
-*ZAAppDelegateConnectorFacebookAccountKitProtocol*
+>*ZAAppDelegateConnectorFirebaseRemoteConfigurationProtocol*
+
+>*ZAAppDelegateConnectorFacebookAccountKitProtocol*
