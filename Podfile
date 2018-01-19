@@ -12,7 +12,7 @@ pre_install do |installer|
 end
 
 def shared_pods
-
+	pod 'ZappPlugins', '~> 1.16.0'
 end
 
 target 'ZappAppConnector' do

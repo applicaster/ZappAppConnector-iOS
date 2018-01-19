@@ -18,4 +18,7 @@ Pod::Spec.new do |s|
   s.public_header_files = 'ZappAppConnector/**/*.h'
   s.source_files = ['ZappAppConnector/**/*.{h,m}']
 	s.exclude_files = ['ZappAppConnector/**/*Tests.m', 'ZappAppConnector/Info.plist']
+
+  s.dependency 'ZappPlugins', '~> 1.16.0'
+
 end
