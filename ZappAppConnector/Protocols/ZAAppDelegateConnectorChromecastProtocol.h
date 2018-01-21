@@ -5,11 +5,21 @@
 //  Created by Avi Levin on 21/12/2017.
 //  Copyright © 2017 Applicaster Ltd. All rights reserved.
 //
+
+/**
+ * This protocol is used to connect between applicasterSDK and Zapp-iOS
+ * All the Chromecast logic is located in the app level.
+ */
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol ZAAppDelegateConnectorChromecastProtocol
+
 - (BOOL)isSynced;
-- (void)play:(NSArray *)playableItems currentPosition:(long)position;
+- (void)play:(nonnull NSArray *)playableItems currentPosition:(long)position;
 - (void)showExtededPlayer;
-- (UIViewController *)getExtededPlayerViewController;
-- (void)setCastDelegate:(id)castDelegate;
+- (nonnull UIViewController *)getExtededPlayerViewController;
+- (void)setCastDelegate:(nonnull id)castDelegate;
+
 @end
 
+NS_ASSUME_NONNULL_END

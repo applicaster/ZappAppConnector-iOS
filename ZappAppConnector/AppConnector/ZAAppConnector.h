@@ -15,7 +15,6 @@
 #import "ZAAppDelegateConnectorAnimationProtocol.h"
 #import "ZAAppDelegateConnectorURLProtocol.h"
 #import "ZAAppDelegateConnectorFirebaseRemoteConfigurationProtocol.h"
-#import "ZAAppDelegateConnectorFirebaseRemoteConfigurationProtocol.h"
 #import "ZAAppDelegateConnectorChromecastProtocol.h"
 #import "ZAAppDelegateConnectorFacebookAccountKitProtocol.h"
 
