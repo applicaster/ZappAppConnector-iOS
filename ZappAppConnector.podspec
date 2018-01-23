@@ -20,5 +20,5 @@ Pod::Spec.new do |s|
     'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
     'SWIFT_VERSION' => '4.0'
   }
-  s.dependency 'ZappPlugins', '~> 1.16.0'  
+  s.dependency 'ZappPlugins', '~> 2.0.0'  
 end

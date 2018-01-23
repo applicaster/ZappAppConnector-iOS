@@ -6,7 +6,7 @@ sudo gem install fastlane
 xcode-select --install
 
 # Installing CocoaPods
-sudo gem install cocoapods -v 1.3.1
+sudo gem install cocoapods -v 1.4.0
 
 echo Installing podspec
 
