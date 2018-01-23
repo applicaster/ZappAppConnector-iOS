@@ -9,16 +9,17 @@ Pod::Spec.new do |s|
   s.author  = { "cmps" => "Applicaster LTD." }
 
   s.source = {
-      "http" => "__source_url__"
+      :git => "git@github.com:applicaster/ZappAppConnector-iOS.git",
+      :tag => s.version.to_s
   }
 
-  s.vendored_frameworks = 'ZappAppConnector.framework'
+  s.public_header_files = 'ZappAppConnector/**/*.h'
+  s.source_files = ['ZappAppConnector/**/*.{h,m,swift}']
+  s.exclude_files = ['ZappAppConnector/**/*Tests.m', 'ZappAppConnector/Info.plist']
 
   s.requires_arc = true
 
   s.xcconfig = {
-    'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
     'SWIFT_VERSION' => '4.0'
   }
-  s.dependency 'ZappPlugins', '~> 2.0.0'  
 end

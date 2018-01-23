@@ -22,6 +22,4 @@ Pod::Spec.new do |s|
   s.source_files = ['ZappAppConnector/**/*.{h,m,swift}']
 	s.exclude_files = ['ZappAppConnector/**/*Tests.m', 'ZappAppConnector/Info.plist']
 
-  s.dependency 'ZappPlugins', '~> 2.0.0'
-
 end
