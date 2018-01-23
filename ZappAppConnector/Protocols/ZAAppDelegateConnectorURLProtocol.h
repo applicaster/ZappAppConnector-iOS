@@ -10,6 +10,6 @@
 @protocol ZAAppDelegateConnectorURLProtocol
 
 - (NSString *)appUrlSchemePrefix;
-- (NSURL *)fileUrlWithName:(NSString *)fileName extension:(NSString *)extension;
+- (nullable NSURL *)fileUrlWithName:(NSString *)fileName extension:(NSString *)extension;
 
 @end
