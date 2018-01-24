@@ -5,12 +5,12 @@
 //  Created by Alex Zchut on 02/07/2017.
 //  Copyright © 2017 Applicaster Ltd. All rights reserved.
 //
-//@import ZappPlugins;
+@import ZappPlugins;
 
 @protocol ZAAppDelegateConnectorNavigationProtocol
 
 - (void)navigateToHomeScreen;
 - (void)customizeNavigationWithModel:(id)model;
-//- (id <ZPAdapterNavBarProtocol>)navigationBarManager;
+- (id <ZPAdapterNavBarProtocol>)navigationBarManager;
 
 @end
