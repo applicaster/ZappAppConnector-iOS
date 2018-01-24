@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07E094671FEC161F006C1776 /* ZAAppDelegateConnectorChromecastProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E094661FEC161F006C1776 /* ZAAppDelegateConnectorChromecastProtocol.h */; };
+		07E094671FEC161F006C1776 /* ZAAppDelegateConnectorChromecastProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E094661FEC161F006C1776 /* ZAAppDelegateConnectorChromecastProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66AE73F03F2F5DDF217F7140 /* Pods_ZappAppConnectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B291F0DDD60F5E87DB25C224 /* Pods_ZappAppConnectorTests.framework */; };
 		71797F471FF41FC5004D3232 /* ZAAccountKitUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71797F461FF41FC5004D3232 /* ZAAccountKitUser.swift */; };
 		71B074911FF2B27A008ADA28 /* ZAAppDelegateConnectorFacebookAccountKitProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 71B074901FF2B27A008ADA28 /* ZAAppDelegateConnectorFacebookAccountKitProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
