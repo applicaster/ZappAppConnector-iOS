@@ -33,5 +33,6 @@ echo "${podspec_template}" > "${pod_dir}/${podspec_file_name}"
 echo Pushing podspec to repo
 pod setup
 
+pod repo add ApplicasterSpecs git@github.com:applicaster/CocoaPods.git
 pod repo add ApplicasterSpecs-Private git@github.com:applicaster/CocoaPods-Private.git
-pod repo push --verbose --allow-warnings ApplicasterSpecs-Private "${pod_dir}/${podspec_file_name}"
+pod repo push --verbose --no-private --allow-warnings ApplicasterSpecs "${pod_dir}/${podspec_file_name}"

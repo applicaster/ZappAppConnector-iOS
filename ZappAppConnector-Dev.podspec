@@ -14,8 +14,8 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.xcconfig = {
-    'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
-    'SWIFT_VERSION' => '4.0'
+    'SWIFT_VERSION' => '4.0',
+    'ENABLE_BITCODE' => 'NO'
   }
 
   s.public_header_files = 'ZappAppConnector/**/*.h'
@@ -23,5 +23,4 @@ Pod::Spec.new do |s|
 	s.exclude_files = ['ZappAppConnector/**/*Tests.m', 'ZappAppConnector/Info.plist']
 
   s.dependency 'ZappPlugins', '~> 2.0.0'
-
 end

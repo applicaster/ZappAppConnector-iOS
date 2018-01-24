@@ -9,8 +9,7 @@ Pod::Spec.new do |s|
   s.author  = { "cmps" => "Applicaster LTD." }
 
   s.source = {
-      :git => "git@github.com:applicaster/ZappAppConnector-iOS.git",
-      :tag => s.version.to_s
+    "http" => "__source_url__"
   }
 
   s.public_header_files = 'ZappAppConnector/**/*.h'
