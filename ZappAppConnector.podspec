@@ -12,9 +12,7 @@ Pod::Spec.new do |s|
     "http" => "__source_url__"
   }
 
-  s.public_header_files = 'ZappAppConnector/**/*.h'
-  s.source_files = ['ZappAppConnector/**/*.{h,m,swift}']
-  s.exclude_files = ['ZappAppConnector/**/*Tests.m', 'ZappAppConnector/Info.plist']
+  s.vendored_frameworks = 'ZappAppConnector.framework'
 
   s.requires_arc = true
 
