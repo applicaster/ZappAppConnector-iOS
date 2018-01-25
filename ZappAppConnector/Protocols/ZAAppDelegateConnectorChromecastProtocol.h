@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)showExtededPlayer;
 - (nonnull UIViewController *)getExtededPlayerViewController;
 - (void)setCastDelegate:(nonnull id)castDelegate;
-- (NSUInteger)getExtededPlayerOrientation;
+- (UIInterfaceOrientationMask)extendedPlayerOrientation;
 
 @end
 
