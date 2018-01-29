@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ZappAppConnector"
-  s.version          = '2.0.1'
+  s.version          = '2.0.2'
   s.summary          = "ZappAppConnector"
   s.description      = <<-DESC
                         ZappAppConnector container.
@@ -22,5 +22,5 @@ Pod::Spec.new do |s|
   s.source_files = ['ZappAppConnector/**/*.{h,m,swift}']
 	s.exclude_files = ['ZappAppConnector/**/*Tests.m', 'ZappAppConnector/Info.plist']
 
-  s.dependency 'ZappPlugins', '~> 2.0.0'
+  s.dependency 'ZappPlugins', '~> 2.0.1'
 end
