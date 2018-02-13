@@ -53,7 +53,7 @@ cp -R "${device_compiled_framework_path}" "${product_dir}"
 
 product_modules_dir="${product_dir}/${product_name}.framework/Modules/${product_name}.swiftmodule"
 simulator_modules_dir="${simulator_build_dir}/${product_name}.framework/Modules/${product_name}.swiftmodule"
-cp -r "${simulator_modules_dir}/" "${product_modules_dir}/"
+cp -a "${simulator_modules_dir}/." "${product_modules_dir}/"
 
 # Create universal binary file using lipo and place the combined executable in the copied framework directory
 lipo -create -output "${product_dir}/${product_name}.framework/${product_name}" "${device_compiled_framework_path}/${product_name}" "${simulator_compiled_framework_path}/${product_name}"
@@ -87,7 +87,7 @@ bintray_repo="pods"
 bintray_package="${product_name}"
 bintray_file_path="${bintray_organization}/${bintray_repo}/${bintray_package}/${product_version}"
 
-bintray_upload_url="https://api.bintray.com/content/${bintray_file_path}/${zipped_product_file_name}?publish=1&override=1"
+bintray_upload_url="https://api.bintray.com/content/${bintray_file_path}/${zipped_product_file_name}?publish=1&override=0"
 
 echo; echo
 echo "Uploading to: ${bintray_upload_url}"

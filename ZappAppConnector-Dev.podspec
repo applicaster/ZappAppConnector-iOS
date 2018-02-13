@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ZappAppConnector"
-  s.version          = '1.3.2'
+  s.version          = '2.0.3'
   s.summary          = "ZappAppConnector"
   s.description      = <<-DESC
                         ZappAppConnector container.
@@ -12,13 +12,15 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, '9.0'
   s.requires_arc = true
-  
+
   s.xcconfig = {
-    'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
-    'SWIFT_VERSION' => '4.0'
+    'SWIFT_VERSION' => '4.0',
+    'ENABLE_BITCODE' => 'NO'
   }
 
   s.public_header_files = 'ZappAppConnector/**/*.h'
   s.source_files = ['ZappAppConnector/**/*.{h,m,swift}']
 	s.exclude_files = ['ZappAppConnector/**/*Tests.m', 'ZappAppConnector/Info.plist']
+
+  s.dependency 'ZappPlugins', '~> 2.0.2'
 end

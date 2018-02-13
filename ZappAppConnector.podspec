@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.author  = { "cmps" => "Applicaster LTD." }
 
   s.source = {
-      "http" => "__source_url__"
+    "http" => "__source_url__"
   }
 
   s.vendored_frameworks = 'ZappAppConnector.framework'
@@ -17,8 +17,8 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.xcconfig = {
-    'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
     'SWIFT_VERSION' => '4.0'
   }
-  
+
+  s.dependency 'ZappPlugins', '~> 2.0.2'
 end
