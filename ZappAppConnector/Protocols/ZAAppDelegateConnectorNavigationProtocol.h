@@ -7,6 +7,8 @@
 //
 @import ZappPlugins;
 
+@protocol ZPAdapterNavBarProtocol;
+
 @protocol ZAAppDelegateConnectorNavigationProtocol
 
 - (void)navigateToHomeScreen;
