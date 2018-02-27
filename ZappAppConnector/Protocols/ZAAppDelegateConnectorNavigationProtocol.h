@@ -12,7 +12,8 @@
 @protocol ZAAppDelegateConnectorNavigationProtocol
 
 - (void)navigateToHomeScreen;
-- (void)customizeNavigationWithModel:(id)model;
+- (void)customizeNavigationWithModel:(id)model
+                          dataSource:(id)dataSource;
 - (id <ZPAdapterNavBarProtocol>)navigationBarManager;
 
 @end

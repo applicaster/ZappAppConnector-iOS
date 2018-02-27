@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ZappAppConnector"
-  s.version          = '2.0.3'
+  s.version          = '2.0.4'
   s.summary          = "ZappAppConnector"
   s.description      = <<-DESC
                         ZappAppConnector container.
