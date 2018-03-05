@@ -19,7 +19,7 @@
 #import "ZAAppDelegateConnectorFacebookAccountKitProtocol.h"
 
 @protocol ZAAppDelegateConnectorAnalyticsProtocol;
-@protocol ZAAppDelegateConnectorGenericProtocol;
+@protocol ZAAppDelegateConnectorGenericProtocol; 
 
 @interface ZAAppConnector : NSObject
 
