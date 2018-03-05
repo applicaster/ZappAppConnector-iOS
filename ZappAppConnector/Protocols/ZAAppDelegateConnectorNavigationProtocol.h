@@ -15,5 +15,5 @@
 - (void)customizeNavigationWithModel:(id)model
                           dataSource:(id)dataSource;
 - (id <ZPAdapterNavBarProtocol>)navigationBarManager;
-
+- (UIViewController *) topmostModal;
 @end

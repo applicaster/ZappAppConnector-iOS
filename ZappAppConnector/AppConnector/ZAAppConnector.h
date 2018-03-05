@@ -19,6 +19,7 @@
 #import "ZAAppDelegateConnectorFacebookAccountKitProtocol.h"
 
 @protocol ZAAppDelegateConnectorAnalyticsProtocol;
+@protocol ZAAppDelegateConnectorAccountProtocol;
 
 @interface ZAAppConnector : NSObject
 
@@ -33,6 +34,7 @@
 @property (nonatomic, weak) id<ZAAppDelegateConnectorChromecastProtocol> chromecastDelegate;
 @property (nonatomic, weak) id<ZAAppDelegateConnectorFacebookAccountKitProtocol> facebookAccountKitDelegate;
 @property (nonatomic, weak) id<ZAAppDelegateConnectorAnalyticsProtocol> analyticsDelegate;
+@property (nonatomic, weak) id<ZAAppDelegateConnectorAccountProtocol> accountDelegate;
 
 + (instancetype)sharedInstance;
 
