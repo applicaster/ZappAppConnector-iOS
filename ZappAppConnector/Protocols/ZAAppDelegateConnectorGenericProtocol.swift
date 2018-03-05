@@ -1,5 +1,5 @@
 //
-//  ZAAppDelegateConnectorAccountProtocol.swift
+//  ZAAppDelegateConnectorGenericProtocol.swift
 //  ZappAppConnector
 //
 //  Created by Alex Zchut on 06/03/2018.
@@ -8,8 +8,8 @@
 
 import Foundation
 
-@objc public protocol ZAAppDelegateConnectorAccountProtocol {
+@objc public protocol ZAAppDelegateConnectorGenericProtocol {
 
     // Retrieve account extensions dictionary
-    @objc func extensionsDictionary() -> Dictionary<String, AnyObject>
+    @objc func accountExtensionsDictionary() -> Dictionary<String, AnyObject>
 }
