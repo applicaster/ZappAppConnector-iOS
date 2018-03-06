@@ -1,0 +1,47 @@
+# iOS CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/ios-migrating-from-1-2/ for more details
+#
+version: 2
+jobs:
+  build:
+
+    # Specify the Xcode version to use
+    macos:
+      xcode: "9.1.0"
+    shell: /bin/bash --login -eo pipefail
+    environment:
+      - PROJECT_NAME: "ZappAppConnector"
+      - SCRIPTS_FOLDER: "scripts"
+
+    steps:
+      - checkout
+
+      # CocoaPods Version
+      - run:
+          name: CocoaPods - version
+          command: bundle exec pod --version
+
+      # Pod update
+      - run:
+          name: CocoaPods - update dependencies
+          command: bundle exec pod update --no-repo-update
+
+      # Tests
+      - run:
+          name: Tests - start
+          command: ./$SCRIPTS_FOLDER/CircleCI/deploy.sh
+
+      - store_test_results:
+          name: Test results - collecting
+          path: ./CircleArtifacts/test-results
+
+      - deploy:
+          name: Creating Closed SDK version
+          command: |
+            if [ "$CIRCLE_BRANCH" = "master" ];
+            then
+              ./$SCRIPTS_FOLDER/CircleCI/deploy.sh
+            else
+              echo "Branch is not master, deploy process will be skipped"
+            fi
