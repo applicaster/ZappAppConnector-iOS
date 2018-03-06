@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		07E094671FEC161F006C1776 /* ZAAppDelegateConnectorChromecastProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E094661FEC161F006C1776 /* ZAAppDelegateConnectorChromecastProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		66AE73F03F2F5DDF217F7140 /* Pods_ZappAppConnectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B291F0DDD60F5E87DB25C224 /* Pods_ZappAppConnectorTests.framework */; };
 		711C9972202E0D1F008B5D73 /* ZAAppDelegateConnectorAnalyticsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711C9971202E0D1F008B5D73 /* ZAAppDelegateConnectorAnalyticsProtocol.swift */; };
-		716A73E173D0827F0FA28DEE /* Pods_ZappAppConnector_ZappAppConnectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CC678034F349683EB9516A /* Pods_ZappAppConnector_ZappAppConnectorTests.framework */; };
 		71797F471FF41FC5004D3232 /* ZAAccountKitUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71797F461FF41FC5004D3232 /* ZAAccountKitUser.swift */; };
 		71B074911FF2B27A008ADA28 /* ZAAppDelegateConnectorFacebookAccountKitProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 71B074901FF2B27A008ADA28 /* ZAAppDelegateConnectorFacebookAccountKitProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE4A9A991F0AD60A002FDE36 /* ZAAppDelegateConnectorURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4A9A981F0AD60A002FDE36 /* ZAAppDelegateConnectorURLProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -19,8 +17,7 @@
 		CE5003501F0A115E00825C38 /* ZAAppDelegateConnectorAnimationProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CE50034F1F0A115E00825C38 /* ZAAppDelegateConnectorAnimationProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E7849026D17AE23184966088 /* Pods_ZappAppConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16AAABC6978A076A27EE310 /* Pods_ZappAppConnector.framework */; };
 		FA13B615204DF5E60012E9AB /* ZAAppDelegateConnectorGenericProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13B614204DF5E60012E9AB /* ZAAppDelegateConnectorGenericProtocol.swift */; };
-		FA95903F1F08D7E600879372 /* ZappAppConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9590351F08D7E600879372 /* ZappAppConnector.framework */; };
-		FA9590441F08D7E600879372 /* ZappAppConnectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9590431F08D7E600879372 /* ZappAppConnectorTests.m */; };
+		FA13B61D204E9B630012E9AB /* ZappAppConnectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13B61C204E9B630012E9AB /* ZappAppConnectorTests.swift */; };
 		FA9590461F08D7E600879372 /* ZappAppConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9590381F08D7E600879372 /* ZappAppConnector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA9590521F08D80500879372 /* ZAAppConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9590501F08D80500879372 /* ZAAppConnector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA9590531F08D80500879372 /* ZAAppConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9590511F08D80500879372 /* ZAAppConnector.m */; };
@@ -29,16 +26,6 @@
 		FA95905C1F08DA7F00879372 /* ZAAppDelegateConnectorLayoutsStylesProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = FA95905B1F08DA7F00879372 /* ZAAppDelegateConnectorLayoutsStylesProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA9A96511F1612F500E64F9D /* ZAAppDelegateConnectorFirebaseRemoteConfigurationProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9A96501F1612F500E64F9D /* ZAAppDelegateConnectorFirebaseRemoteConfigurationProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		FA9590401F08D7E600879372 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FA95902C1F08D7E500879372 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FA9590341F08D7E600879372;
-			remoteInfo = ZappAppConnector;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		07E094661FEC161F006C1776 /* ZAAppDelegateConnectorChromecastProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZAAppDelegateConnectorChromecastProtocol.h; sourceTree = "<group>"; };
@@ -59,12 +46,12 @@
 		F7EDBC18C1683DC6E51A7D1B /* Pods-ZappAppConnector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappAppConnector.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZappAppConnector/Pods-ZappAppConnector.release.xcconfig"; sourceTree = "<group>"; };
 		F95B35259A036D85D45EE036 /* Pods-ZappAppConnector-ZappAppConnectorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappAppConnector-ZappAppConnectorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZappAppConnector-ZappAppConnectorTests/Pods-ZappAppConnector-ZappAppConnectorTests.release.xcconfig"; sourceTree = "<group>"; };
 		FA13B614204DF5E60012E9AB /* ZAAppDelegateConnectorGenericProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZAAppDelegateConnectorGenericProtocol.swift; sourceTree = "<group>"; };
+		FA13B61A204E9B630012E9AB /* ZappAppConnectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZappAppConnectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA13B61C204E9B630012E9AB /* ZappAppConnectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZappAppConnectorTests.swift; sourceTree = "<group>"; };
+		FA13B61E204E9B630012E9AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA9590351F08D7E600879372 /* ZappAppConnector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZappAppConnector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9590381F08D7E600879372 /* ZappAppConnector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZappAppConnector.h; sourceTree = "<group>"; };
 		FA9590391F08D7E600879372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA95903E1F08D7E600879372 /* ZappAppConnectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZappAppConnectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA9590431F08D7E600879372 /* ZappAppConnectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZappAppConnectorTests.m; sourceTree = "<group>"; };
-		FA9590451F08D7E600879372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA9590501F08D80500879372 /* ZAAppConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAAppConnector.h; sourceTree = "<group>"; };
 		FA9590511F08D80500879372 /* ZAAppConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZAAppConnector.m; sourceTree = "<group>"; };
 		FA9590551F08D81F00879372 /* ZAAppDelegateConnectorNavigationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAAppDelegateConnectorNavigationProtocol.h; sourceTree = "<group>"; };
@@ -74,21 +61,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FA13B617204E9B630012E9AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA9590311F08D7E600879372 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E7849026D17AE23184966088 /* Pods_ZappAppConnector.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA95903B1F08D7E600879372 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FA95903F1F08D7E600879372 /* ZappAppConnector.framework in Frameworks */,
-				66AE73F03F2F5DDF217F7140 /* Pods_ZappAppConnectorTests.framework in Frameworks */,
-				716A73E173D0827F0FA28DEE /* Pods_ZappAppConnector_ZappAppConnectorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,11 +110,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FA13B61B204E9B630012E9AB /* ZappAppConnectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA13B61C204E9B630012E9AB /* ZappAppConnectorTests.swift */,
+				FA13B61E204E9B630012E9AB /* Info.plist */,
+			);
+			path = ZappAppConnectorTests;
+			sourceTree = "<group>";
+		};
 		FA95902B1F08D7E500879372 = {
 			isa = PBXGroup;
 			children = (
 				FA9590371F08D7E600879372 /* ZappAppConnector */,
-				FA9590421F08D7E600879372 /* ZappAppConnectorTests */,
+				FA13B61B204E9B630012E9AB /* ZappAppConnectorTests */,
 				FA9590361F08D7E600879372 /* Products */,
 				8466ED8AC4BC88AF5F9C6F6F /* Pods */,
 				62B68DE0E47FE99D8A3EC03D /* Frameworks */,
@@ -141,7 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				FA9590351F08D7E600879372 /* ZappAppConnector.framework */,
-				FA95903E1F08D7E600879372 /* ZappAppConnectorTests.xctest */,
+				FA13B61A204E9B630012E9AB /* ZappAppConnectorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,15 +148,6 @@
 				FA9590391F08D7E600879372 /* Info.plist */,
 			);
 			path = ZappAppConnector;
-			sourceTree = "<group>";
-		};
-		FA9590421F08D7E600879372 /* ZappAppConnectorTests */ = {
-			isa = PBXGroup;
-			children = (
-				FA9590431F08D7E600879372 /* ZappAppConnectorTests.m */,
-				FA9590451F08D7E600879372 /* Info.plist */,
-			);
-			path = ZappAppConnectorTests;
 			sourceTree = "<group>";
 		};
 		FA95904F1F08D80500879372 /* AppConnector */ = {
@@ -220,6 +204,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		FA13B619204E9B630012E9AB /* ZappAppConnectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA13B61F204E9B630012E9AB /* Build configuration list for PBXNativeTarget "ZappAppConnectorTests" */;
+			buildPhases = (
+				FA13B616204E9B630012E9AB /* Sources */,
+				FA13B617204E9B630012E9AB /* Frameworks */,
+				FA13B618204E9B630012E9AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZappAppConnectorTests;
+			productName = ZappAppConnectorTests;
+			productReference = FA13B61A204E9B630012E9AB /* ZappAppConnectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		FA9590341F08D7E600879372 /* ZappAppConnector */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA9590491F08D7E600879372 /* Build configuration list for PBXNativeTarget "ZappAppConnector" */;
@@ -240,41 +241,21 @@
 			productReference = FA9590351F08D7E600879372 /* ZappAppConnector.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FA95903D1F08D7E600879372 /* ZappAppConnectorTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FA95904C1F08D7E600879372 /* Build configuration list for PBXNativeTarget "ZappAppConnectorTests" */;
-			buildPhases = (
-				1F97B5756838A71BB56352B1 /* [CP] Check Pods Manifest.lock */,
-				FA95903A1F08D7E600879372 /* Sources */,
-				FA95903B1F08D7E600879372 /* Frameworks */,
-				FA95903C1F08D7E600879372 /* Resources */,
-				69FB9268447CD59217562D66 /* [CP] Embed Pods Frameworks */,
-				50D9A025FDF0A569353F521D /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FA9590411F08D7E600879372 /* PBXTargetDependency */,
-			);
-			name = ZappAppConnectorTests;
-			productName = ZappAppConnectorTests;
-			productReference = FA95903E1F08D7E600879372 /* ZappAppConnectorTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		FA95902C1F08D7E500879372 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Applicaster Ltd.";
 				TargetAttributes = {
-					FA9590341F08D7E600879372 = {
-						CreatedOnToolsVersion = 8.3.3;
+					FA13B619204E9B630012E9AB = {
+						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
-					FA95903D1F08D7E600879372 = {
+					FA9590341F08D7E600879372 = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
 					};
@@ -293,20 +274,20 @@
 			projectRoot = "";
 			targets = (
 				FA9590341F08D7E600879372 /* ZappAppConnector */,
-				FA95903D1F08D7E600879372 /* ZappAppConnectorTests */,
+				FA13B619204E9B630012E9AB /* ZappAppConnectorTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FA9590331F08D7E600879372 /* Resources */ = {
+		FA13B618204E9B630012E9AB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA95903C1F08D7E600879372 /* Resources */ = {
+		FA9590331F08D7E600879372 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -316,57 +297,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1F97B5756838A71BB56352B1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ZappAppConnector-ZappAppConnectorTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		50D9A025FDF0A569353F521D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZappAppConnector-ZappAppConnectorTests/Pods-ZappAppConnector-ZappAppConnectorTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		69FB9268447CD59217562D66 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ZappAppConnector-ZappAppConnectorTests/Pods-ZappAppConnector-ZappAppConnectorTests-frameworks.sh",
-				"${PODS_ROOT}/ZappPlugins/ZappPlugins.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZappPlugins.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZappAppConnector-ZappAppConnectorTests/Pods-ZappAppConnector-ZappAppConnectorTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		AD850484A6824E4857A777B3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -403,6 +333,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FA13B616204E9B630012E9AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA13B61D204E9B630012E9AB /* ZappAppConnectorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA9590301F08D7E600879372 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -414,25 +352,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA95903A1F08D7E600879372 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FA9590441F08D7E600879372 /* ZappAppConnectorTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		FA9590411F08D7E600879372 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FA9590341F08D7E600879372 /* ZappAppConnector */;
-			targetProxy = FA9590401F08D7E600879372 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
+		FA13B620204E9B630012E9AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ZappAppConnectorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.applicaster.ZappAppConnectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA13B621204E9B630012E9AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ZappAppConnectorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.applicaster.ZappAppConnectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		FA9590471F08D7E600879372 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -581,31 +542,18 @@
 			};
 			name = Release;
 		};
-		FA95904D1F08D7E600879372 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D406F193B51FF760BB4422B /* Pods-ZappAppConnector-ZappAppConnectorTests.debug.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = ZappAppConnectorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.applicaster.ZappAppConnectorTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		FA95904E1F08D7E600879372 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F95B35259A036D85D45EE036 /* Pods-ZappAppConnector-ZappAppConnectorTests.release.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = ZappAppConnectorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.applicaster.ZappAppConnectorTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FA13B61F204E9B630012E9AB /* Build configuration list for PBXNativeTarget "ZappAppConnectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA13B620204E9B630012E9AB /* Debug */,
+				FA13B621204E9B630012E9AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FA95902F1F08D7E500879372 /* Build configuration list for PBXProject "ZappAppConnector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -620,15 +568,6 @@
 			buildConfigurations = (
 				FA95904A1F08D7E600879372 /* Debug */,
 				FA95904B1F08D7E600879372 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FA95904C1F08D7E600879372 /* Build configuration list for PBXNativeTarget "ZappAppConnectorTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FA95904D1F08D7E600879372 /* Debug */,
-				FA95904E1F08D7E600879372 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

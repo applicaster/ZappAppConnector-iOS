@@ -1,0 +1,21 @@
+machine:
+  xcode:
+    version: 9.1
+checkout:
+  post:
+    - ./Scripts/CircleCI/prepareGit.sh
+dependencies:
+  override:
+    - ./Scripts/CircleCI/dependencies.sh:
+        timeout: 1500
+  cache_directories:
+    - "~/.cocoapods/repos"
+test:
+  override:
+    - echo Start Test
+    - ./Scripts/CircleCI/test.sh
+deployment:
+  latest:
+    branch: [master]
+    commands:
+      - ./scripts/CircleCI/deploy.sh

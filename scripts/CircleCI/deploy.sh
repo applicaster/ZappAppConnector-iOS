@@ -1,6 +1,6 @@
 #!/bin/sh
-product_name=${1}
-bintray_api_key=${2}
+product_name="ZappAppConnector"
+project_version="`/usr/libexec/PlistBuddy -c \"Print :CFBundleShortVersionString\" \"./${product_name}/Info.plist\"`"
 
 # start with a clean output folder
 build_dir="./build"
@@ -30,7 +30,7 @@ set -o pipefail && xcodebuild clean build \
 						-scheme ${product_name} \
 						-sdk iphonesimulator \
 						VALID_ARCHS="x86_64 i386" \
-						-destination 'platform=iOS Simulator,name=iPhone 6' \
+						-destination 'platform=iOS Simulator,name=iPhone 8' \
 						-configuration Release \
 						-derivedDataPath "${build_dir}" | xcpretty
 
@@ -62,6 +62,15 @@ lipo -create -output "${product_dir}/${product_name}.framework/${product_name}" 
 rm -f "${product_dir}/${product_name}.framework/libswiftRemoteMirror.dylib"
 rm -rf "${product_dir}/${product_name}.framework/Frameworks"
 
+# check if tag for this version is exists
+if [ $(git tag -l "$project_version") ]; then
+  echo "ERROR: Project version needs to be updated, tag for this version already exists."
+  exit 500
+fi
+
+# creating a tag with new version
+git tag $project_version
+git push origin $project_version
 
 # get the latest tag from the specified git repository and tag's commit
 product_version=$(git describe --abbrev=0 --tags)
@@ -82,7 +91,7 @@ zipped_product_file_path="${product_dir}/${zipped_product_file_name}"
 # upload the compressed file to the BinTray host
 bintray_username="applicasterapps"
 bintray_organization="applicaster-ltd"
-bintray_api_key="${bintray_api_key}"
+bintray_api_key="${BINTRAY_API_KEY}"
 bintray_repo="pods"
 bintray_package="${product_name}"
 bintray_file_path="${bintray_organization}/${bintray_repo}/${bintray_package}/${product_version}"
