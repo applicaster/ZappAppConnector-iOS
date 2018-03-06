@@ -15,23 +15,43 @@ jobs:
       - SCRIPTS_FOLDER: "scripts"
 
     steps:
+# Prepere Git and Submodules
+      - restore_cache:
+          name: Git - restore cache
+          key: Zapp-NavBarPlugins-v1-{{ .Branch }}-{{ .Revision }}-{{ .Environment.version_id }}
+          keys:
+            - Zapp-NavBarPlugins-v1-{{ .Branch }}-{{ .Revision }}
+            - Zapp-NavBarPlugins-v1-{{ .Branch }}-
+            - Zapp-NavBarPlugins-v1-
+
       - checkout
 
-      # Prepare Ruby
-      - run:
-          name: Ruby - set version
-          command:  echo "ruby-2.4" > ~/.ruby-version
-
-      - run:
-          name: Ruby - version
-          command:  ruby -v
+      - save_cache:
+          name: Git - save cache
+          key: Zapp-NavBarPlugins-v1-{{ .Branch }}-{{ .Revision }}-{{ .Environment.version_id }}
+          paths:
+            - ".git"
 
       # Prepare Bundler
+      - restore_cache:
+          name: Bundler - restore cache
+          key: Zapp-NavBarPlugins-v1-{{ checksum "Gemfile.lock" }}
+
       - run:
           name: Bundler - update dependencies
           command: bundle update
 
-      # CocoaPods Version
+      - save_cache:
+          name: Bundler - save cache
+          key: Zapp-NavBarPlugins-v1-{{ checksum "Gemfile.lock" }}
+          paths:
+            - /Users/distiller/.rubies/ruby-2.4.2/lib/ruby/gems/2.4.0/gems
+
+      # Restore Cocoapods cache, save cache on lower level, after pod update
+      - restore_cache:
+          name: CocoaPods - restore cache
+          key: Zapp-NavBarPlugins-CocoaPods-1
+
       - run:
           name: CocoaPods - version
           command: bundle exec pod --version
@@ -44,19 +64,24 @@ jobs:
       # Cache CocoaPods
       - save_cache:
           name: CocoaPods - save cache
-          key: ZappAppConnector-CocoaPods-{{ checksum "Podfile.lock" }}
+          key: Zapp-NavBarPlugins-CocoaPods-1
           paths:
             - "~/.cocoapods"
             - "Pods"
+            - "Podfile.lock"
 
       # Tests
       - run:
           name: Tests - start
-          command: ./$SCRIPTS_FOLDER/CircleCI/test.sh
+          command: bundle exec fastlane ios test
 
       - store_test_results:
           name: Test results - collecting
           path: ./CircleArtifacts/test-results
+
+      - store_artifacts:
+          name: Artifacts - collecting
+          path: ./CircleArtifacts
 
       # Deploy
       - deploy:
