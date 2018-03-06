@@ -18,19 +18,9 @@ jobs:
       - checkout
 
       # Prepare Bundler
-      - restore_cache:
-          name: Bundler - restore cache
-          key: ZappAppConnector-v1.0.0-{{ checksum "Gemfile.lock" }}
-
       - run:
           name: Bundler - update dependencies
           command: bundle update
-
-      - save_cache:
-          name: Bundler - save cache
-          key: ZappAppConnector-v1.0.0-{{ checksum "Gemfile.lock" }}
-          paths:
-            - /Users/distiller/.rubies/ruby-2.4.2/lib/ruby/gems/2.4.0/gems
 
       # CocoaPods Version
       - run:
@@ -69,7 +59,7 @@ jobs:
             else
               echo "Branch is not master, deploy process will be skipped"
             fi
- 
+
 workflows:
   version: 2
   build:
