@@ -17,6 +17,15 @@ jobs:
     steps:
       - checkout
 
+      # Prepare Ruby
+      - run:
+          name: Ruby - set version
+          command:  echo "ruby-2.4" > ~/.ruby-version
+
+      - run:
+          name: Ruby - version
+          command:  ruby -v
+
       # Prepare Bundler
       - run:
           name: Bundler - update dependencies
