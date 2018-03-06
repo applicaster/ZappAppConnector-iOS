@@ -69,7 +69,7 @@ jobs:
             else
               echo "Branch is not master, deploy process will be skipped"
             fi
-
+ 
 workflows:
   version: 2
   build:
