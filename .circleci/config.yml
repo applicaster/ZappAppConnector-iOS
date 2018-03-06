@@ -29,10 +29,6 @@ jobs:
 
       # Pod update
       - run:
-          name: Avoid hosts unknown for github
-          command: echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
-
-      - run:
           name: CocoaPods - update dependencies
           command: bundle exec pod update
 
