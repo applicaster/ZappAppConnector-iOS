@@ -13,7 +13,7 @@ jobs:
     environment:
       - PROJECT_NAME: "ZappAppConnector"
       - SCRIPTS_FOLDER: "scripts"
-
+ 
     steps:
       - checkout
 
@@ -30,7 +30,7 @@ jobs:
       # Tests
       - run:
           name: Tests - start
-          command: ./$SCRIPTS_FOLDER/CircleCI/deploy.sh
+          command: ./$SCRIPTS_FOLDER/CircleCI/test.sh
 
       - store_test_results:
           name: Test results - collecting
