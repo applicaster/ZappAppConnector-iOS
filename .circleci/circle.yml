@@ -4,7 +4,7 @@
 #
 version: 2
 jobs:
-  build:
+  build-and-deploy:
 
     # Specify the Xcode version to use
     macos:
@@ -13,7 +13,7 @@ jobs:
     environment:
       - PROJECT_NAME: "ZappAppConnector"
       - SCRIPTS_FOLDER: "scripts"
- 
+
     steps:
       - checkout
 
@@ -25,7 +25,15 @@ jobs:
       # Pod update
       - run:
           name: CocoaPods - update dependencies
-          command: bundle exec pod update --no-repo-update
+          command: bundle exec pod update
+
+      # Cache CocoaPods
+      - save_cache:
+          name: CocoaPods - save cache
+          key: ZappAppConnector-CocoaPods-{{ checksum "Podfile.lock" }}
+          paths:
+            - "~/.cocoapods"
+            - "Pods"
 
       # Tests
       - run:
@@ -45,3 +53,9 @@ jobs:
             else
               echo "Branch is not master, deploy process will be skipped"
             fi
+            
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build-and-deploy
