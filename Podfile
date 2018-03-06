@@ -3,7 +3,6 @@ use_frameworks!
 install! 'cocoapods', :deterministic_uuids => false
 
 source 'git@github.com:applicaster/CocoaPods.git'
-source 'git@github.com:applicaster/CocoaPods-Private.git'
 source 'git@github.com:CocoaPods/Specs.git'
 
 target 'ZappAppConnector' do
