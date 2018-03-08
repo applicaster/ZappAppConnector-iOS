@@ -7,7 +7,7 @@ platform :ios do
 
   lane :test do
     fastlane_require 'dotenv'
-    ENV["FASTLANE_EXPLICIT_OPEN_SIMULATOR"] = "2"
+    ENV["FASTLANE_EXPLICIT_OPEN_SIMULATOR"] = "0"
     scan(
       workspace: "#{ENV['PROJECT_NAME']}.xcworkspace",
       scheme: "ZappAppConnector",
