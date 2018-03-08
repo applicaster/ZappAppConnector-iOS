@@ -9,10 +9,9 @@ platform :ios do
     fastlane_require 'dotenv'
     scan(
       workspace: "#{ENV['PROJECT_NAME']}.xcworkspace",
-      scheme: "ZappAppConnector",
-      output_directory: "CircleArtifacts/test-results",
-      device: "iPhone 8",
-      xcargs: "CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO",
+      scheme: ENV['PROJECT_NAME'],
+      output_directory: "#{ENV['CIRCLE_TEST_REPORTS']}/results.xml",
+      device: "iPhone 7",
       code_coverage: true
     )
   end
