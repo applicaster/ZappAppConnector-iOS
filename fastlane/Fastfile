@@ -10,7 +10,6 @@ platform :ios do
     scan(
       workspace: "#{ENV['PROJECT_NAME']}.xcworkspace",
       scheme: ENV['PROJECT_NAME'],
-      output_directory: "#{ENV['CIRCLE_TEST_REPORTS']}/results.xml",
       device: "iPhone 7",
       code_coverage: true
     )
