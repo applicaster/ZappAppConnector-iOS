@@ -16,6 +16,7 @@
 		CE50034E1F0A10ED00825C38 /* ZAAppDelegateConnectorActionProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CE50034D1F0A10ED00825C38 /* ZAAppDelegateConnectorActionProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE5003501F0A115E00825C38 /* ZAAppDelegateConnectorAnimationProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CE50034F1F0A115E00825C38 /* ZAAppDelegateConnectorAnimationProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E7849026D17AE23184966088 /* Pods_ZappAppConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16AAABC6978A076A27EE310 /* Pods_ZappAppConnector.framework */; };
+		FA04246120515E7E00001A4B /* ZappAppConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9590351F08D7E600879372 /* ZappAppConnector.framework */; };
 		FA13B615204DF5E60012E9AB /* ZAAppDelegateConnectorGenericProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13B614204DF5E60012E9AB /* ZAAppDelegateConnectorGenericProtocol.swift */; };
 		FA13B61D204E9B630012E9AB /* ZappAppConnectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13B61C204E9B630012E9AB /* ZappAppConnectorTests.swift */; };
 		FA9590461F08D7E600879372 /* ZappAppConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9590381F08D7E600879372 /* ZappAppConnector.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -65,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA04246120515E7E00001A4B /* ZappAppConnector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
