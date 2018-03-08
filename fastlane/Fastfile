@@ -7,12 +7,12 @@ platform :ios do
 
   lane :test do
     fastlane_require 'dotenv'
-    ENV["FASTLANE_EXPLICIT_OPEN_SIMULATOR"] = "0"
     scan(
       workspace: "#{ENV['PROJECT_NAME']}.xcworkspace",
       scheme: "ZappAppConnector",
       output_directory: "CircleArtifacts/test-results",
       device: "iPhone 8",
+      xcargs: "CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO",
       code_coverage: true
     )
   end
