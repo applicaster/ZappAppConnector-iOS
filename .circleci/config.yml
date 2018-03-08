@@ -81,7 +81,7 @@ jobs:
       # Tests
       - run:
           name: Tests - start
-          command: bundle exec fastlane ios test
+          command: ./$SCRIPTS_FOLDER/CircleCI/test.sh
 
       - store_test_results:
           name: Test results - collecting
