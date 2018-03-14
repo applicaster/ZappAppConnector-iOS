@@ -17,6 +17,7 @@
 		CE50034C1F0A0F3F00825C38 /* ZAAppDelegateConnectorTimeProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CE50034B1F0A0F3F00825C38 /* ZAAppDelegateConnectorTimeProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE50034E1F0A10ED00825C38 /* ZAAppDelegateConnectorActionProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CE50034D1F0A10ED00825C38 /* ZAAppDelegateConnectorActionProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE5003501F0A115E00825C38 /* ZAAppDelegateConnectorAnimationProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CE50034F1F0A115E00825C38 /* ZAAppDelegateConnectorAnimationProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEE1439320553E30002B007E /* ZAAppDelegateConnectorAdFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE1439220553E30002B007E /* ZAAppDelegateConnectorAdFactoryProtocol.swift */; };
 		E7849026D17AE23184966088 /* Pods_ZappAppConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16AAABC6978A076A27EE310 /* Pods_ZappAppConnector.framework */; };
 		FA13B615204DF5E60012E9AB /* ZAAppDelegateConnectorGenericProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13B614204DF5E60012E9AB /* ZAAppDelegateConnectorGenericProtocol.swift */; };
 		FA95903F1F08D7E600879372 /* ZappAppConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9590351F08D7E600879372 /* ZappAppConnector.framework */; };
@@ -55,6 +56,7 @@
 		CE50034B1F0A0F3F00825C38 /* ZAAppDelegateConnectorTimeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAAppDelegateConnectorTimeProtocol.h; sourceTree = "<group>"; };
 		CE50034D1F0A10ED00825C38 /* ZAAppDelegateConnectorActionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAAppDelegateConnectorActionProtocol.h; sourceTree = "<group>"; };
 		CE50034F1F0A115E00825C38 /* ZAAppDelegateConnectorAnimationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAAppDelegateConnectorAnimationProtocol.h; sourceTree = "<group>"; };
+		CEE1439220553E30002B007E /* ZAAppDelegateConnectorAdFactoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZAAppDelegateConnectorAdFactoryProtocol.swift; sourceTree = "<group>"; };
 		E16AAABC6978A076A27EE310 /* Pods_ZappAppConnector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZappAppConnector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7EDBC18C1683DC6E51A7D1B /* Pods-ZappAppConnector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappAppConnector.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZappAppConnector/Pods-ZappAppConnector.release.xcconfig"; sourceTree = "<group>"; };
 		F95B35259A036D85D45EE036 /* Pods-ZappAppConnector-ZappAppConnectorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappAppConnector-ZappAppConnectorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZappAppConnector-ZappAppConnectorTests/Pods-ZappAppConnector-ZappAppConnectorTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 		FA9590541F08D81F00879372 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				CEE1439220553E30002B007E /* ZAAppDelegateConnectorAdFactoryProtocol.swift */,
 				71B074901FF2B27A008ADA28 /* ZAAppDelegateConnectorFacebookAccountKitProtocol.h */,
 				FA9A96501F1612F500E64F9D /* ZAAppDelegateConnectorFirebaseRemoteConfigurationProtocol.h */,
 				FA9590591F08DA6A00879372 /* ZAAppDelegateConnectorLocalizationProtocol.h */,
@@ -327,7 +330,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ZappAppConnector-ZappAppConnectorTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ZappAppConnectorTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -346,7 +349,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZappAppConnector-ZappAppConnectorTests/Pods-ZappAppConnector-ZappAppConnectorTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZappAppConnectorTests/Pods-ZappAppConnectorTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		69FB9268447CD59217562D66 /* [CP] Embed Pods Frameworks */ = {
@@ -355,7 +358,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ZappAppConnector-ZappAppConnectorTests/Pods-ZappAppConnector-ZappAppConnectorTests-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZappAppConnectorTests/Pods-ZappAppConnectorTests-frameworks.sh",
 				"${PODS_ROOT}/ZappPlugins/ZappPlugins.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -364,7 +367,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZappAppConnector-ZappAppConnectorTests/Pods-ZappAppConnector-ZappAppConnectorTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZappAppConnectorTests/Pods-ZappAppConnectorTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AD850484A6824E4857A777B3 /* [CP] Check Pods Manifest.lock */ = {
@@ -411,6 +414,7 @@
 				FA9590531F08D80500879372 /* ZAAppConnector.m in Sources */,
 				711C9972202E0D1F008B5D73 /* ZAAppDelegateConnectorAnalyticsProtocol.swift in Sources */,
 				FA13B615204DF5E60012E9AB /* ZAAppDelegateConnectorGenericProtocol.swift in Sources */,
+				CEE1439320553E30002B007E /* ZAAppDelegateConnectorAdFactoryProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,7 +587,7 @@
 		};
 		FA95904D1F08D7E600879372 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D406F193B51FF760BB4422B /* Pods-ZappAppConnector-ZappAppConnectorTests.debug.xcconfig */;
+			baseConfigurationReference = 365E8C5F3B06CC6F3F5965D4 /* Pods-ZappAppConnectorTests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ZappAppConnectorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -594,7 +598,7 @@
 		};
 		FA95904E1F08D7E600879372 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F95B35259A036D85D45EE036 /* Pods-ZappAppConnector-ZappAppConnectorTests.release.xcconfig */;
+			baseConfigurationReference = 90D7D48DF8594EFF11EAA009 /* Pods-ZappAppConnectorTests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ZappAppConnectorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
