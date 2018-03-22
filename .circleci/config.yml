@@ -12,8 +12,12 @@ jobs:
     shell: /bin/bash --login -eo pipefail
     environment:
       - PROJECT_NAME: "ZappAppConnector"
-      - SCRIPTS_FOLDER: "scripts"
-
+      - SCHEME_NAME: "ZappAppConnector"
+      - SCRIPTS_LOCAL_FOLDER: "~/.scripts-iOS/"
+      - SCRIPTS_REPO_PATH: "git@github.com:applicaster/Scripts-iOS.git"
+      - DEPLOY_VERSION: "0.0.3"
+      - DEPLOY_COMMAND: "~/.scripts-iOS/circleCi/deploySingleFramework.sh"
+    working_directory: ~/ZappAppConnector-iOS
     steps:
       - run:
           name: Ruby - set version
@@ -26,24 +30,38 @@ jobs:
       # Prepere Git and Submodules
       - restore_cache:
           name: Git - restore cache
-          key: Zapp-ZappAppConnector-v1-{{ .Branch }}-{{ .Revision }}-{{ .Environment.version_id }}
+          key: Zapp-App-Connector-v1.0-{{ .Branch }}-{{ .Revision }}-{{ .Environment.version_id }}
           keys:
-            - Zapp-ZappAppConnector-v1-{{ .Branch }}-{{ .Revision }}
-            - Zapp-ZappAppConnector-v1-{{ .Branch }}-
-            - Zapp-ZappAppConnector-v1-
+            - Zapp-App-Connector-v1.0-{{ .Branch }}-{{ .Revision }}
+            - Zapp-App-Connector-v1.0-{{ .Branch }}-
+            - Zapp-App-Connector-v1.0-
 
       - checkout
 
       - save_cache:
           name: Git - save cache
-          key: Zapp-ZappAppConnector-v1-{{ .Branch }}-{{ .Revision }}-{{ .Environment.version_id }}
+          key: Zapp-App-Connector-v1.0-{{ .Branch }}-{{ .Revision }}-{{ .Environment.version_id }}
           paths:
             - ".git"
+
+      - run:
+          name: Adding scripts
+          command: |
+            if [ ! -d "$SCRIPTS_LOCAL_FOLDER" ]; then
+              git clone $SCRIPTS_REPO_PATH $SCRIPTS_LOCAL_FOLDER
+            else
+              echo "Repo exists in local path: $SCRIPTS_LOCAL_FOLDER"
+              git -C $SCRIPTS_LOCAL_FOLDER fetch
+              git -C $SCRIPTS_LOCAL_FOLDER fetch --tags
+              git -C $SCRIPTS_LOCAL_FOLDER checkout
+              git -C $SCRIPTS_LOCAL_FOLDER pull origin master
+            fi
+            git -C $SCRIPTS_LOCAL_FOLDER checkout $DEPLOY_VERSION
 
       # Prepare Bundler
       - restore_cache:
           name: Bundler - restore cache
-          key: Zapp-ZappAppConnector-v1-{{ checksum "Gemfile.lock" }}
+          key: Zapp-App-Connector-v1-{{ checksum "Gemfile.lock" }}
 
       - run:
           name: Bundler - update dependencies
@@ -51,14 +69,14 @@ jobs:
 
       - save_cache:
           name: Bundler - save cache
-          key: Zapp-ZappAppConnector-v1-{{ checksum "Gemfile.lock" }}
+          key: Zapp-App-Connector-v1-{{ checksum "Gemfile.lock" }}
           paths:
             - /Users/distiller/.rubies/ruby-2.4.2/lib/ruby/gems/2.4.0/gems
 
       # Restore Cocoapods cache, save cache on lower level, after pod update
       - restore_cache:
           name: CocoaPods - restore cache
-          key: Zapp-ZappAppConnector-CocoaPods-1
+          key: Zapp-App-Connector-CocoaPods-2
 
       - run:
           name: CocoaPods - version
@@ -72,7 +90,7 @@ jobs:
       # Cache CocoaPods
       - save_cache:
           name: CocoaPods - save cache
-          key: Zapp-ZappAppConnector-CocoaPods-1
+          key: Zapp-App-Connector-CocoaPods-2
           paths:
             - "~/.cocoapods"
             - "Pods"
@@ -83,20 +101,25 @@ jobs:
           name: Tests - start
           command: bundle exec fastlane ios test
 
-      - store_test_results:
-          name: Test results - collecting
-          path: ./CircleArtifacts/test-results
-
       # Deploy
       - deploy:
           name: Creating Closed SDK version
           command: |
             if [ "$CIRCLE_BRANCH" = "master" ];
             then
-              ./$SCRIPTS_FOLDER/CircleCI/deploy.sh
+              echo "Execute deploy script"
+              $DEPLOY_COMMAND $PROJECT_NAME
             else
               echo "Branch is not master, deploy process will be skipped"
             fi
+
+      - store_test_results:
+          name: Test results - collecting
+          path: ./CircleArtifacts/test-results
+
+      - store_artifacts:
+          name: Artifacts - collecting
+          path: ./CircleArtifacts
 
 workflows:
   version: 2

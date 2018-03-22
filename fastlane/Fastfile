@@ -9,7 +9,8 @@ platform :ios do
     fastlane_require 'dotenv'
     scan(
       workspace: "#{ENV['PROJECT_NAME']}.xcworkspace",
-      scheme: ENV['PROJECT_NAME'],
+      scheme: ENV['SCHEME_NAME'],
+      output_directory: "CircleArtifacts/test-results",
       device: "iPhone 7",
       code_coverage: true
     )
