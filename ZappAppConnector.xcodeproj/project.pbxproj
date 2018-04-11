@@ -355,7 +355,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ZappAppConnector-ZappAppConnectorTests/Pods-ZappAppConnector-ZappAppConnectorTests-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZappAppConnectorTests/Pods-ZappAppConnectorTests-frameworks.sh",
 				"${PODS_ROOT}/ZappPlugins/ZappPlugins.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
