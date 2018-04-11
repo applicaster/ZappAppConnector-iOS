@@ -14,6 +14,7 @@
 - (void)navigateToHomeScreen;
 - (void)customizeNavigationWithModel:(id)model
                           dataSource:(id)dataSource;
-- (id <ZPAdapterNavBarProtocol>)navigationBarManager;
+- (ZPNavigationBarBaseAdapter *)navigationBarManager;
 - (UIViewController *) topmostModal;
+
 @end
