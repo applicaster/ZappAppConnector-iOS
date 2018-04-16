@@ -7,7 +7,7 @@ source 'git@github.com:applicaster/CocoaPods-Private.git'
 source 'git@github.com:CocoaPods/Specs.git'
 
 target 'ZappAppConnector' do
-	pod 'ZappPlugins', '~> 2.2.0'
+	pod 'ZappPlugins', '~> 2.3.0'
 
 	target 'ZappAppConnectorTests' do
 		inherit! :search_paths
