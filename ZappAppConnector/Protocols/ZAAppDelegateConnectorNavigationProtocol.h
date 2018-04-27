@@ -16,5 +16,11 @@
                           dataSource:(id)dataSource;
 - (ZPNavigationBarBaseAdapter *)navigationBarManager;
 - (UIViewController *) topmostModal;
+/**
+ Retrieve navigationbar height with status bar
+
+ @return Returns: height on the navigation bar container including status bar
+ */
+- (CGFloat)navigationBarHeightPlusStatusBar;
 
 @end
