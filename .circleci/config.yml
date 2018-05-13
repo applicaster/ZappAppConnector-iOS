@@ -11,7 +11,7 @@ jobs:
       xcode: "9.3.0"
     shell: /bin/bash --login -eo pipefail
     environment:
-      - PROJECT_NAME: "ZappAppConnector"
+      - PROJECT_NAME: ZappAppConnector"
       - SCHEME_NAME: "ZappAppConnector"
       - SCRIPTS_LOCAL_FOLDER: "~/.scripts-iOS"
       - SCRIPTS_REPO_PATH: "git@github.com:applicaster/Scripts-iOS.git"
