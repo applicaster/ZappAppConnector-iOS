@@ -17,8 +17,8 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.xcconfig = {
-    'SWIFT_VERSION' => '4.0'
+    'SWIFT_VERSION' => '4.1'
   }
 
-  s.dependency 'ZappPlugins', '~> 2.3.0'
+  s.dependency 'ZappPlugins', '~> 3.0.0'
 end

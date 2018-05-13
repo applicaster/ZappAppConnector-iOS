@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ZappAppConnector"
-  s.version          = '2.4.0'
+  s.version          = '3.0.0'
   s.summary          = "ZappAppConnector"
   s.description      = <<-DESC
                         ZappAppConnector container.
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.xcconfig = {
-    'SWIFT_VERSION' => '4.0',
+    'SWIFT_VERSION' => '4.1',
     'ENABLE_BITCODE' => 'NO'
   }
 
