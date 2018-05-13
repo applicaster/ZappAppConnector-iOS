@@ -17,9 +17,6 @@ jobs:
       - SCRIPTS_REPO_PATH: "git@github.com:applicaster/Scripts-iOS.git"
       - DEPLOY_VERSION: "0.0.24"
       - DEPLOY_COMMAND: "~/.scripts-iOS/circleCi/deploySingleFramework.sh"
-      #fastlane variables
-      - LC_ALL: "en_US.UTF-8"
-      - LANG: "en_US.UTF-8"
     working_directory: ~/ZappAppConnector-iOS
     steps:
       - run:
