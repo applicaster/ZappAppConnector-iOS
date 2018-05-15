@@ -9,9 +9,8 @@
 /* Begin PBXBuildFile section */
 		07E094671FEC161F006C1776 /* ZAAppDelegateConnectorChromecastProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E094661FEC161F006C1776 /* ZAAppDelegateConnectorChromecastProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0F83BAC020AA9F53004C3790 /* ZAAppDelegateQuickBrickProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F83BABF20AA9F53004C3790 /* ZAAppDelegateQuickBrickProtocol.swift */; };
-		66AE73F03F2F5DDF217F7140 /* Pods_ZappAppConnectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B291F0DDD60F5E87DB25C224 /* Pods_ZappAppConnectorTests.framework */; };
+		6C6CF5D3C79E542D0B63D13C /* Pods_ZappAppConnectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49537DCBFE64E18EC95BC225 /* Pods_ZappAppConnectorTests.framework */; };
 		711C9972202E0D1F008B5D73 /* ZAAppDelegateConnectorAnalyticsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711C9971202E0D1F008B5D73 /* ZAAppDelegateConnectorAnalyticsProtocol.swift */; };
-		716A73E173D0827F0FA28DEE /* Pods_ZappAppConnector_ZappAppConnectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CC678034F349683EB9516A /* Pods_ZappAppConnector_ZappAppConnectorTests.framework */; };
 		71797F471FF41FC5004D3232 /* ZAAccountKitUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71797F461FF41FC5004D3232 /* ZAAccountKitUser.swift */; };
 		71B074911FF2B27A008ADA28 /* ZAAppDelegateConnectorFacebookAccountKitProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 71B074901FF2B27A008ADA28 /* ZAAppDelegateConnectorFacebookAccountKitProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE4A9A991F0AD60A002FDE36 /* ZAAppDelegateConnectorURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4A9A981F0AD60A002FDE36 /* ZAAppDelegateConnectorURLProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -47,13 +46,12 @@
 		0824DA4ED3E6BE8B6C57EDDA /* Pods-ZappAppConnector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappAppConnector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZappAppConnector/Pods-ZappAppConnector.debug.xcconfig"; sourceTree = "<group>"; };
 		0F83BABF20AA9F53004C3790 /* ZAAppDelegateQuickBrickProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZAAppDelegateQuickBrickProtocol.swift; sourceTree = "<group>"; };
 		365E8C5F3B06CC6F3F5965D4 /* Pods-ZappAppConnectorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappAppConnectorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZappAppConnectorTests/Pods-ZappAppConnectorTests.debug.xcconfig"; sourceTree = "<group>"; };
-		42CC678034F349683EB9516A /* Pods_ZappAppConnector_ZappAppConnectorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZappAppConnector_ZappAppConnectorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49537DCBFE64E18EC95BC225 /* Pods_ZappAppConnectorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZappAppConnectorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		711C9971202E0D1F008B5D73 /* ZAAppDelegateConnectorAnalyticsProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZAAppDelegateConnectorAnalyticsProtocol.swift; sourceTree = "<group>"; };
 		71797F461FF41FC5004D3232 /* ZAAccountKitUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZAAccountKitUser.swift; sourceTree = "<group>"; };
 		71B074901FF2B27A008ADA28 /* ZAAppDelegateConnectorFacebookAccountKitProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAAppDelegateConnectorFacebookAccountKitProtocol.h; sourceTree = "<group>"; };
 		90D7D48DF8594EFF11EAA009 /* Pods-ZappAppConnectorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappAppConnectorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZappAppConnectorTests/Pods-ZappAppConnectorTests.release.xcconfig"; sourceTree = "<group>"; };
 		9D406F193B51FF760BB4422B /* Pods-ZappAppConnector-ZappAppConnectorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappAppConnector-ZappAppConnectorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZappAppConnector-ZappAppConnectorTests/Pods-ZappAppConnector-ZappAppConnectorTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B291F0DDD60F5E87DB25C224 /* Pods_ZappAppConnectorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZappAppConnectorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4A9A981F0AD60A002FDE36 /* ZAAppDelegateConnectorURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAAppDelegateConnectorURLProtocol.h; sourceTree = "<group>"; };
 		CE50034B1F0A0F3F00825C38 /* ZAAppDelegateConnectorTimeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAAppDelegateConnectorTimeProtocol.h; sourceTree = "<group>"; };
 		CE50034D1F0A10ED00825C38 /* ZAAppDelegateConnectorActionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAAppDelegateConnectorActionProtocol.h; sourceTree = "<group>"; };
@@ -91,8 +89,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA95903F1F08D7E600879372 /* ZappAppConnector.framework in Frameworks */,
-				66AE73F03F2F5DDF217F7140 /* Pods_ZappAppConnectorTests.framework in Frameworks */,
-				716A73E173D0827F0FA28DEE /* Pods_ZappAppConnector_ZappAppConnectorTests.framework in Frameworks */,
+				6C6CF5D3C79E542D0B63D13C /* Pods_ZappAppConnectorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,8 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				E16AAABC6978A076A27EE310 /* Pods_ZappAppConnector.framework */,
-				B291F0DDD60F5E87DB25C224 /* Pods_ZappAppConnectorTests.framework */,
-				42CC678034F349683EB9516A /* Pods_ZappAppConnector_ZappAppConnectorTests.framework */,
+				49537DCBFE64E18EC95BC225 /* Pods_ZappAppConnectorTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
