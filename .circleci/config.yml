@@ -30,7 +30,7 @@ jobs:
           name: Ruby - version
           command:  ruby -v
 
-      # Prepere Git and Submodules
+      # Prepare Git and Submodules
       - restore_cache:
           name: Git - restore cache
           key: Zapp-ZappAppConnector-v1.0-{{ .Branch }}-{{ .Revision }}-{{ .Environment.version_id }}
