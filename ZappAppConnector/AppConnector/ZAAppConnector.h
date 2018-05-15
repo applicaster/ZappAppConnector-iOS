@@ -21,6 +21,7 @@
 @protocol ZAAppDelegateConnectorAnalyticsProtocol;
 @protocol ZAAppDelegateConnectorGenericProtocol;
 @protocol ZAAppDelegateConnectorAdFactoryProtocol;
+@protocol ZAAppDelegateConnectorQuickBrickProtocol;
 
 
 @interface ZAAppConnector : NSObject
@@ -38,6 +39,7 @@
 @property (nonatomic, weak) id<ZAAppDelegateConnectorAnalyticsProtocol> analyticsDelegate;
 @property (nonatomic, weak) id<ZAAppDelegateConnectorGenericProtocol> genericDelegate;
 @property (nonatomic, weak) id<ZAAppDelegateConnectorAdFactoryProtocol> adDelegate;
+@property (nonatomic, weak) id<ZAAppDelegateConnectorQuickBrickProtocol> quickBrickDelegate;
 
 
 + (instancetype)sharedInstance;
