@@ -41,7 +41,6 @@
 @property (nonatomic, weak) id<ZAAppDelegateConnectorAdFactoryProtocol> adDelegate;
 @property (nonatomic, weak) id<ZAAppDelegateConnectorQuickBrickProtocol> quickBrickDelegate;
 
-
 + (instancetype)sharedInstance;
 
 @end
