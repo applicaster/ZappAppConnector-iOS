@@ -17,8 +17,9 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.xcconfig = {
-    'SWIFT_VERSION' => '4.1'
+    'SWIFT_VERSION' => '4.1',
+    'ENABLE_BITCODE' => 'YES'
   }
 
-  s.dependency 'ZappPlugins', '~> 4.1.0'
+  s.dependency 'ZappPlugins', '~> 4.5.1'
 end

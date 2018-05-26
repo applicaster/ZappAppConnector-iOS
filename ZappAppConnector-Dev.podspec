@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ZappAppConnector"
-  s.version          = '3.1.0'
+  s.version          = '3.3.0'
   s.summary          = "ZappAppConnector"
   s.description      = <<-DESC
                         ZappAppConnector container.
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.xcconfig = {
     'SWIFT_VERSION' => '4.1',
-    'ENABLE_BITCODE' => 'NO'
+    'ENABLE_BITCODE' => 'YES'
   }
 
   s.public_header_files = 'ZappAppConnector/**/*.h'
