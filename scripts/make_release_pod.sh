@@ -117,9 +117,10 @@ cp ./.swift-version ${product_dir}
 pushd "${product_dir}"
 ls ${product_dir}
 
+pod cache clean --all
 pod repo add master https://github.com/CocoaPods/Specs.git
 pod repo add ApplicasterSpecs git@github.com:applicaster/CocoaPods.git
-pod repo push --verbose --no-private --allow-warnings ApplicasterSpecs "${podspec_file_name}"
+pod repo push --verbose --no-private --skip-import-validation --allow-warnings ApplicasterSpecs "${podspec_file_name}"
 popd
 
 # Removed Build directory
